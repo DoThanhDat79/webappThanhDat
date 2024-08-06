@@ -11,9 +11,9 @@ body {
     background-color: #888;
     height: 120px;
 }
-.keyboard {
+.keymt {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     padding: 10px;
     background: #333;
@@ -37,48 +37,12 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-.key span {
-    display: block;
-    text-align: center;
-}
-.key sup {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    font-size: 0.8em;
-    color: black;
-}
-.key i {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size: 0.8em;
-    color: black;
-}
-.bi-microsoft::before {
-    content: "\f65d";
-    position: absolute;
-    top: 14px;
-    left: 17px;
-    width: 20px;
-    height: 20px;
-    font-size: 25px;
-}
 .key:active {
     background: #ddd;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.key.loai2 {
-    grid-column: span 2;
-}
-.key.loai3 {
-    grid-column: span 3;
-}
 .key.loai5 {
     grid-column: span 5;
-}
-.key.null {
-    grid-column: span 12;
 }
 
 @media (max-width: 1200px) {
@@ -110,4 +74,13 @@ body {
 .navigation{
     height: 50px;
     padding-top: 20px;
+}
+textarea {
+    height: 35px;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
